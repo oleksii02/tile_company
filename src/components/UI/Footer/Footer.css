@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Frank+Ruhl+Libre:wght@700&family=Montserrat:wght@100&family=Poppins:wght@600&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Zen+Antique&family=Zen+Dots&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Frank+Ruhl+Libre:wght@700&family=Montserrat:wght@100&family=Poppins:wght@600&family=Roboto+Slab:wght@100..900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Zen+Antique&family=Zen+Dots&display=swap");
+.footer {
+  position: relative;
+  margin: 50px auto 0;
+}
+.footer .container {
+  min-width: 1100px;
+  max-width: 80vw;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 900px) and (max-width: 1199px) {
+  .footer .container {
+    min-width: 850px;
+    max-width: 80vw;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  .footer .container {
+    min-width: 600px;
+    max-width: 85vw;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .footer .container {
+    min-width: 369px;
+    max-width: 90vw;
+  }
+}
+.footer .box__logo {
+  display: flex;
+}
+.footer .box__logo .logo img {
+  width: 100px;
+}
+.footer .box__logo .Name {
+  margin: 25px 0 0 10px;
+}
+.footer .box__logo .Name h2 {
+  margin: 0;
+  color: #0F263C;
+  font-size: 38px;
+  line-height: 40px;
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.footer .box__logo .Name h3 {
+  margin: 0;
+  color: #A20B05;
+  font-size: 19px;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.footer .Rights {
+  background-color: #cebca0;
+  height: 6vh;
+}
+.footer h6 {
+  margin: 60px 0 0;
+  color: #0F263C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100%;
+  font-size: 16px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 500;
+}
+.footer .QUICK__LINKS {
+  margin: 20px 0 0;
+}
+.footer .QUICK__LINKS h5 {
+  margin: 0;
+  font-size: 26px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  color: #0F263C;
+}
+.footer .QUICK__LINKS ul {
+  margin: 10px 0 0;
+  padding: 0 0 0 15px;
+}
+.footer .QUICK__LINKS a {
+  font-size: 18px;
+  font-family: "Roboto Slab", serif;
+  color: #0F263C;
+  text-decoration: none;
+}
+.footer .QUICK__LINKS a:hover {
+  color: #A20B05;
+}
+.footer .connected {
+  margin: 20px 0 0;
+}
+.footer .connected h5 {
+  margin: 0;
+  justify-content: flex-start;
+  width: 100%;
+  display: flex;
+  font-size: 26px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  color: #0F263C;
+}
+.footer .connected .icon__groups {
+  width: 240px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .connected .icon__groups a {
+  text-decoration: none;
+}
+.footer .connected .MuiSvgIcon-root {
+  font-size: 45px;
+  color: #0F263C;
+}
+.footer .connected .MuiSvgIcon-root:hover {
+  color: #A20B05;
+}
+.footer .connected .maps__phone {
+  margin: 0;
+  width: 200px;
+}
+.footer .connected .maps__phone a {
+  color: #0F263C;
+  text-decoration: none;
+}
+.footer .connected .maps__phone a:hover h5 {
+  color: #A20B05;
+}
+.footer .connected .maps__phone a:hover .MuiSvgIcon-root {
+  color: #A20B05;
+}
+.footer .connected .maps__phone a h5 {
+  margin: 0;
+  font-size: 22px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  align-items: center;
+  display: flex;
+}
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  .footer .box__logo {
+    display: block;
+  }
+  .footer .box__logo .logo {
+    justify-content: center;
+    display: flex;
+  }
+  .footer .box__logo .logo img {
+    width: 80px;
+  }
+  .footer .box__logo .Name {
+    margin: 15px 0 0 5px;
+  }
+  .footer .box__logo .Name h2 {
+    justify-content: center;
+    display: flex;
+    font-size: 36px;
+  }
+  .footer .box__logo .Name h3 {
+    justify-content: center;
+    display: flex;
+    font-size: 18px;
+  }
+  .footer .QUICK__LINKS {
+    margin: 0;
+  }
+  .footer .QUICK__LINKS h5 {
+    font-size: 23px;
+  }
+  .footer .QUICK__LINKS ul {
+    margin: 5px 0 0;
+  }
+  .footer .QUICK__LINKS a {
+    font-size: 16px;
+  }
+  .footer .connected {
+    margin: 0;
+    display: grid;
+    justify-content: center;
+  }
+  .footer .connected h5 {
+    justify-content: center;
+    display: flex;
+    font-size: 23px;
+  }
+  .footer .connected .icon__groups {
+    margin-top: 5px;
+    width: 200px;
+  }
+  .footer .connected .MuiSvgIcon-root {
+    font-size: 40px;
+  }
+  .footer .connected .maps__phone a h5 {
+    justify-content: flex-start;
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .footer .box__logo {
+    display: block;
+  }
+  .footer .box__logo .logo {
+    justify-content: center;
+    display: flex;
+  }
+  .footer .box__logo .logo img {
+    width: 100px;
+  }
+  .footer .box__logo .Name {
+    margin: 15px 0 0 5px;
+  }
+  .footer .box__logo .Name h2 {
+    justify-content: center;
+    display: flex;
+    font-size: 36px;
+  }
+  .footer .box__logo .Name h3 {
+    justify-content: center;
+    display: flex;
+    font-size: 18px;
+  }
+  .footer .QUICK__LINKS {
+    justify-content: center;
+    display: grid;
+    margin: 15px 0 0;
+  }
+  .footer .QUICK__LINKS h5 {
+    font-size: 25px;
+  }
+  .footer .QUICK__LINKS ul {
+    list-style: none;
+    margin: 5px 0 0;
+    padding: 0;
+  }
+  .footer .QUICK__LINKS ul li {
+    justify-content: center;
+    display: flex;
+  }
+  .footer .QUICK__LINKS a {
+    font-size: 16px;
+  }
+  .footer .connected {
+    margin: 15px 0 0;
+    display: grid;
+    justify-content: center;
+  }
+  .footer .connected h5 {
+    justify-content: center;
+    display: flex;
+    font-size: 23px;
+  }
+  .footer .connected .icon__groups {
+    margin-top: 5px;
+    width: 200px;
+  }
+  .footer .connected .MuiSvgIcon-root {
+    font-size: 40px;
+  }
+  .footer .connected .maps__phone a h5 {
+    justify-content: flex-start;
+    font-size: 18px;
+  }
+}
+
+/*# sourceMappingURL=Footer.css.map */

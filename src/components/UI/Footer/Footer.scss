@@ -1,0 +1,335 @@
+@import "../../styles/fonts.scss";
+
+.footer {
+  position: relative;
+  margin: 50px auto 0;
+
+
+  .container {
+    min-width: 1100px;
+    max-width: 80vw;
+    margin: 0 auto;
+    @media only screen and (min-width: 900px) and (max-width: 1199px) {
+      min-width: 850px;
+      max-width: 80vw;
+    }
+    @media only screen and (min-width: 600px) and (max-width: 899px) {
+      min-width: 600px;
+      max-width: 85vw;
+    }
+    @media only screen and (max-width: 599px) {
+      min-width: 369px;
+      max-width: 90vw;
+    }
+  }
+
+  .box__logo {
+    display: flex;
+
+
+    .logo {
+      img {
+        width: 100px;
+      }
+    }
+
+    .Name {
+      margin: 25px 0 0 10px;
+
+      h2 {
+        margin: 0;
+        color: $blue__logo;
+        font-size: 38px;
+        line-height: 40px;
+        font-family: "Fjalla One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      h3 {
+        margin: 0;
+        color: $red__one;
+        font-size: 19px;
+        font-family: "Roboto Slab", serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+      }
+    }
+  }
+
+  .Rights {
+    background-color: $antiquewhite__two;
+    height: 6vh;
+  }
+
+  h6 {
+    margin: 60px 0 0;
+    color: $blue__logo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+    font-size: 16px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 500;
+
+  }
+
+
+  .QUICK__LINKS {
+    margin: 20px 0 0;
+
+    h5 {
+      margin: 0;
+      font-size: 26px;
+      font-family: "Roboto Slab", serif;
+      font-weight: 600;
+      color: $blue__logo;
+    }
+
+    ul {
+      margin: 10px 0 0;
+      padding: 0 0 0 15px;
+    }
+
+    a {
+      font-size: 18px;
+      font-family: "Roboto Slab", serif;
+      color: $blue__logo;
+      text-decoration: none;
+
+      &:hover {
+        color: $red__one;
+      }
+    }
+
+
+  }
+
+  .connected {
+    margin: 20px 0 0;
+
+    h5 {
+      margin: 0;
+      justify-content: flex-start;
+      width: 100%;
+      display: flex;
+      font-size: 26px;
+      font-family: "Roboto Slab", serif;
+      font-weight: 600;
+      color: $blue__logo;
+    }
+
+    .icon__groups {
+      width: 240px;
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+
+      a {
+        text-decoration: none;
+      }
+    }
+
+    .MuiSvgIcon-root {
+      font-size: 45px;
+      color: $blue__logo;
+
+      &:hover {
+        color: $red__one;
+      }
+    }
+
+    .maps__phone {
+      margin: 0;
+      width: 200px;
+
+      a {
+        color: $blue__logo;
+        text-decoration: none;
+
+        &:hover {
+          h5 {
+            color: $red__one;
+          }
+
+          .MuiSvgIcon-root {
+            color: $red__one;
+          }
+        }
+
+        h5 {
+          margin: 0;
+          font-size: 22px;
+          font-family: "Roboto Slab", serif;
+          font-weight: 600;
+          align-items: center;
+          display: flex;
+
+
+        }
+      }
+
+    }
+
+  }
+
+  @media only screen and (min-width: 600px) and (max-width: 899px) {
+
+
+    .box__logo {
+      display: block;
+
+      .logo {
+        justify-content: center;
+        display: flex;
+        img {
+          width: 80px;
+        }
+      }
+
+      .Name {
+
+        margin: 15px 0 0 5px;
+
+        h2 {
+          justify-content: center;
+          display: flex;
+          font-size: 36px;
+        }
+
+        h3 {
+          justify-content: center;
+          display: flex;
+          font-size: 18px;
+        }
+      }
+    }
+    .QUICK__LINKS{
+      margin: 0;
+      h5{
+        font-size: 23px;
+      }
+      ul {
+        margin: 5px 0 0;
+      }
+      a{
+        font-size: 16px;
+      }
+    }
+    .connected{
+      margin: 0;
+      display: grid;
+      justify-content: center;
+
+      h5{
+        justify-content: center;
+        display: flex;
+        font-size: 23px
+      }
+      .icon__groups{
+        margin-top: 5px;
+        width: 200px;
+      }
+      .MuiSvgIcon-root{
+        font-size: 40px;
+      }
+      .maps__phone{
+        a{
+          h5{
+
+            justify-content: flex-start;
+            font-size: 18px;
+          }
+        }
+
+      }
+    }
+
+  }
+  @media only screen and (max-width: 599px) {
+
+
+    .box__logo {
+      display: block;
+
+      .logo {
+        justify-content: center;
+        display: flex;
+        img {
+          width: 100px;
+        }
+      }
+
+      .Name {
+
+        margin: 15px 0 0 5px;
+
+        h2 {
+          justify-content: center;
+          display: flex;
+          font-size: 36px;
+        }
+
+        h3 {
+          justify-content: center;
+          display: flex;
+          font-size: 18px;
+        }
+      }
+    }
+    .QUICK__LINKS{
+      justify-content: center;
+      display: grid;
+      margin: 15px 0 0 ;
+      h5{
+
+        font-size: 25px;
+      }
+      ul {
+        list-style: none;
+        margin: 5px 0 0;
+        padding: 0;
+        li{
+          justify-content: center;
+          display: flex;
+        }
+      }
+      a{
+        font-size: 16px;
+      }
+    }
+    .connected{
+      margin: 15px 0 0 ;
+      display: grid;
+      justify-content: center;
+
+      h5{
+        justify-content: center;
+        display: flex;
+        font-size: 23px
+      }
+      .icon__groups{
+        margin-top: 5px;
+        width: 200px;
+      }
+      .MuiSvgIcon-root{
+        font-size: 40px;
+      }
+      .maps__phone{
+        a{
+          h5{
+
+            justify-content: flex-start;
+            font-size: 18px;
+          }
+        }
+
+      }
+    }
+
+  }
+
+}

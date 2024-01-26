@@ -1,0 +1,249 @@
+@import '../../styles/fonts.scss';
+
+.Navbar {
+  min-width: 1200px;
+  max-width: 80vw;
+  margin: 10px auto 10px;
+  height: 225px;
+  display: grid;
+  grid-template-columns: 150px 250px 1fr;
+  grid-template-areas:
+    'logo name phone'
+    'line line line'
+    'nav nav nav'
+    'line2 line2 line2';
+
+
+  .logo {
+    grid-area: logo;
+
+    img {
+      width: 150px;
+    }
+  }
+
+  .Name {
+    grid-area: name;
+    margin: 45px 0 0 20px;
+
+    h2 {
+      margin: 0;
+      color: $blue__logo;
+      font-size: 42px;
+      font-family: "Fjalla One", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    h3 {
+      margin: 0;
+      color: $red__one;
+      font-size: 21px;
+      font-family: "Roboto Slab", serif;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-style: normal;
+    }
+  }
+
+  .telNumber {
+    grid-area: phone;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 45px;
+
+    a {
+      text-decoration: none;
+      color: #0F263C;
+      font-size: 42px;
+      height: 50px;
+      font-family: "Fjalla One", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+
+      &:hover {
+        color: #E3342C;
+      }
+
+    }
+  }
+
+  .ButtonGroup {
+    grid-area: nav;
+    margin: 5px 0;
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: flex;
+    justify-content: space-around;
+
+    .MuiButton-root {
+      font-size: 18px;
+
+    }
+
+
+  }
+
+  .line {
+    grid-area: line;
+    border: none;
+    height: 1.5px;
+    background: linear-gradient(to left, $red__two 50%, $red__one 50%);
+  }
+
+  .line__two {
+    grid-area: line2;
+    border: none;
+    height: 1.5px;
+    background: linear-gradient(to left, $red__two 50%, $red__one 50%);
+  }
+
+  @media only screen and (min-width: 900px) and (max-width: 1199px) {
+    min-width: 900px;
+    max-width: 85vw;
+    grid-template-columns: 130px 230px 1fr;
+
+
+    .logo {
+      img {
+        width: 130px;
+      }
+    }
+
+    .Name {
+      grid-area: name;
+      margin: 35px 0 0 20px;
+
+      h2 {
+        font-size: 38px;
+
+      }
+
+      h3 {
+        font-size: 19px;
+
+      }
+
+    }
+
+    .telNumber {
+      margin-top: 35px;
+
+      a {
+
+        font-size: 38px;
+
+      }
+    }
+    .ButtonGroup {
+      margin: 0;
+
+      .MuiButton-root {
+        font-size: 16px;
+        padding: 4px 6px;
+
+      }
+
+
+    }
+  }
+  @media only screen and (min-width: 600px) and (max-width: 899px) {
+    min-width: 600px;
+    max-width: 85vw;
+    height: 190px;
+    grid-template-columns: 100px 220px 1fr;
+
+
+    .logo {
+      img {
+        width: 100px;
+      }
+    }
+
+    .Name {
+      grid-area: name;
+      margin: 25px 0 0 10px;
+
+      h2 {
+        font-size: 36px;
+
+      }
+
+      h3 {
+        font-size: 18px;
+
+      }
+
+    }
+
+    .telNumber {
+      margin-top: 25px;
+
+      a {
+
+        font-size: 36px;
+
+      }
+    }
+    .ButtonGroup {
+      margin: 0;
+
+      .MuiButton-root {
+        font-size: 16px;
+        padding: 4px 6px;
+
+      }
+
+
+    }
+  }
+  @media only screen and  (max-width: 599px) {
+    min-width: 369px;
+    margin: 5px auto 0 ;
+    max-width: 90vw;
+    height: 150px;
+    grid-template-columns: 1.6fr 3fr 0;
+
+
+    .logo {
+      justify-content: flex-end;
+      display: flex;
+      img {
+        height: 90px;
+        width: 80px;
+      }
+    }
+
+    .Name {
+      grid-area: name;
+      margin: 17px 0 0 5px;
+
+      h2 {
+        font-size: 34px;
+
+      }
+
+      h3 {
+        font-size: 17px;
+
+      }
+
+    }
+
+    .telNumber {
+      display: none;
+    }
+    .ButtonGroup {
+      margin: 0;
+
+      .MuiButton-root {
+        font-size: 14px;
+        padding: 2px 4px;
+
+      }
+
+
+    }
+  }
+}

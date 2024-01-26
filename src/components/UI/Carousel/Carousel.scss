@@ -1,0 +1,142 @@
+@import "../../styles/fonts.scss";
+
+.mySwiper {
+  margin-top: 50px;
+  height: 50vh;
+  min-width: 1200px;
+  max-width: 80vw;
+  border-radius: 3px;
+  @media only screen and (min-width: 900px) and (max-width: 1199px) {
+    min-width: 900px;
+    max-width: 85vw;
+  }
+  @media only screen and (min-width: 600px) and (max-width: 899px) {
+    min-width: 600px;
+    max-width: 85vw;
+  }
+  @media only screen and (max-width: 599px) {
+    min-width: 369px;
+    max-width: 90vw;
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  position: relative;
+  height: 50vh;
+  text-align: center;
+  background: #fff;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-shadow: $blue__logo 1.5px 1.5px 1.5px;
+
+  h4 {
+    position: absolute;
+    top: 50px;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    z-index: 100;
+    font-size: 26px;
+    color: white;
+  }
+
+  h5 {
+    margin: 15px 0 ;
+    position: absolute;
+    top: 100px;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    z-index: 100;
+    font-size: 20px;
+    color: white;
+  }
+
+  p {
+    position: absolute;
+    top: 150px;
+    justify-content: center;
+    display: flex;
+    width: 80%;
+    z-index: 100;
+    font-size: 18px;
+    color: white;
+  }
+}
+
+.swiper-slide img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+  background: antiquewhite;
+}
+
+.swiper-pagination-bullet-active {
+  background: $red__one;
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1199px) {
+  .swiper-slide {
+    height: 35vh;
+
+    h4 {
+      font-size: 24px;
+    }
+    h5{
+      font-size: 18px;
+    }
+    p{
+      font-size: 16px;
+    }
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  .swiper-slide {
+    height: 35vh;
+
+    h4 {
+      font-size: 20px;
+      top: 0;
+    }
+    h5{
+      font-size: 16px;
+      top: 50px
+    }
+    p{
+      font-size: 14px;
+      top: 80px
+    }
+  }
+}
+@media only screen and   (max-width: 599px) {
+  .swiper-slide {
+    height: 40vh;
+
+    h4 {
+      margin: 10px 0;
+      font-size: 18px;
+      top: 10px;
+    }
+    h5{
+      font-size: 14px;
+      top: 50px
+    }
+    p{
+      font-size: 12px;
+      top: 85px
+    }
+  }
+}

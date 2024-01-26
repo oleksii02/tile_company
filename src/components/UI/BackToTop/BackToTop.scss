@@ -1,0 +1,27 @@
+.scrollToTop{
+  display: block;
+  min-width: 0;
+  bottom: 32px;
+  right: 32px;
+
+
+  @media only screen and (min-width: 600px) and (max-width: 899px) {
+    bottom: 20px;
+    right: 20px;
+
+  }
+
+
+  @media only screen and  (max-width: 599px) {
+    bottom: 15px;
+    right: 15px;
+
+
+  }
+
+}
+
+.MuiFab-root{
+  background-color: #0F263C !important;
+  color: white !important;
+}

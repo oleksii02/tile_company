@@ -1,0 +1,14 @@
+@import "./components/styles/fonts.scss";
+
+.App{scroll-behavior:smooth;
+    a{
+        text-decoration: none;
+    }
+
+    .MuiButton-root{
+        font-family: "Fjalla One", sans-serif !important;
+
+    }
+}
+
+
