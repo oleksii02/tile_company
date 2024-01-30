@@ -54,7 +54,7 @@
       font-style: normal;
     }
 
-    p {
+    p, li {
       color: $blue__logo;
       justify-content: center;
       font-size: 18px;
@@ -63,6 +63,7 @@
       font-weight: 400;
       font-style: normal;
     }
+
 
     .bold {
       font-weight: bold;
@@ -198,7 +199,7 @@
       }
       h3{font-size: 20px}
       h4{font-size: 22px}
-      p{font-size: 16px}
+      p, li{font-size: 16px}
       .MuiButton-root{
         font-size: 18px;
       }
@@ -246,7 +247,7 @@
       h3{font-size: 14px}
       h4{font-size: 16px;
         text-align: center;}
-      p{font-size: 14px}
+      p, li{font-size: 14px}
       .MuiButton-root{
         font-size: 14px;
       }

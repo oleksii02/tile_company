@@ -6,7 +6,7 @@
   margin: 10px auto 10px;
   height: 225px;
   display: grid;
-  grid-template-columns: 150px 250px 1fr;
+  grid-template-columns: 150px 290px 1fr;
   grid-template-areas: "logo name phone" "line line line" "nav nav nav" "line2 line2 line2";
 }
 .Navbar .logo {
@@ -22,7 +22,7 @@
 .Navbar .Name h2 {
   margin: 0;
   color: #0F263C;
-  font-size: 42px;
+  font-size: 50px;
   font-family: "Fjalla One", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -150,7 +150,7 @@
     min-width: 369px;
     margin: 5px auto 0;
     max-width: 90vw;
-    height: 150px;
+    height: 165px;
     grid-template-columns: 1.6fr 3fr 0;
   }
   .Navbar .logo {
@@ -176,10 +176,14 @@
   }
   .Navbar .ButtonGroup {
     margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-items: center;
   }
   .Navbar .ButtonGroup .MuiButton-root {
     font-size: 14px;
     padding: 2px 4px;
+    margin: 2px 0;
   }
 }
 

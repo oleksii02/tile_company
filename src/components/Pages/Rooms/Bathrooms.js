@@ -84,34 +84,22 @@ function Bathrooms(props) {
 
             </div>
             <section className={'information'}>
-                <h2>BATHROOM REMODELERS ROCHESTER</h2>
+                <h2>BATHROOM REMODELERS CHICAGO IL</h2>
                 <div className={'line'}/>
                 <h3>Bathroom Renovation Services For Your Home</h3>
-                <p>One of the most common spaces to design or renovate is your bathroom. As one of the most used rooms,
-                    this room has now become a space for relaxing rather than being only functional private space.
-                    Remodeling your bathroom can be a challenge due to the logistics and all the plumbing happening in
-                    the room. You're going to need to leave this project to an expert.</p>
-                <h4>Rochester NY’s Bathroom Remodeling Expert</h4>
-                <p>A bathroom renovation can create an immense impact on your home’s comfort level as it's a place where
-                    we start and finish every day. Your bathroom should be comfortable, attractive and functional. The
-                    bathroom remodeling experts in Rochester, NY at Craftsmen Construction & Design help you create a
-                    serene and comfortable bathroom that suits your family’s needs and budget. Our elegant bathroom
-                    designs are engineered to accommodate any customer request, as well as withstand the test of
-                    time.</p>
-                <p>We offer a full range of bathroom remodeling services from design to installation, and a wide variety
-                    of cabinets, flooring, faucets, fixtures, and backsplashes. All of our bath installation solutions
-                    are customized to make your vision a reality. We also specialize in Venetian Plaster Design which
-                    gives a polished, rock-hard, marble-like finish to your space. Our skilled team of craftsmen makes
-                    sure that you get the feeling of comfort and luxury in your bathroom. Give your bathroom design a
-                    boost with a little planning and our inspirational bathroom remodel ideas.</p>
-                <a href={'/'}><Button variant={'contained'}>Schedule A Consultation</Button></a>
+                <p>One of the most common spaces to design or remodel is your bathroom. Once one of the most used rooms, this room has now become a space for relaxation, not just a functional private space. Redesigning your bathroom can be a daunting task because of the logistics and all the plumbing that goes into the room. You will need to entrust this project to a professional expert.
+                </p>
+                <h4>CHICAGO IL Bathroom Remodeling Expert</h4>
+                <p>Renovating your bathroom can make a big difference to the comfort level of your home, as it is where we start and end each day. Your bathroom should be comfortable, attractive and functional. The CHICAGO, IL bathroom remodeling experts at Tile Constr & Design can help you create a relaxing and comfortable bathroom that fits your family's needs and budget.
+                </p>
+                <p>We offer a full range of bathroom renovation services from design to installation. All of our bath installation solutions are designed to make your vision a reality.</p>
+                <a href={'/contact-us'}><Button variant={'contained'}>Schedule A Consultation</Button></a>
                 <h4>Get Started On Your Bathroom Renovation Today!</h4>
-                <p className={'bold'}>If it is time to give your bathroom a new look, call the team at Craftsmen
-                    Construction & Design. Contact us and get a FREE Estimate for your Bathroom Remodeling Project.</p>
+                <p className={'bold'}>text text text text text text text text text text text text text text text text text text text text text text text text text text </p>
             </section>
             <section className={'portfolio'}>
 
-                <h3>Providing Bathroom Remodeling in Fairport, Rochester, Spencerport, Webster, and Pittsford</h3>
+                <h3>text text text text text text text text text text text text text text text text text text text text text </h3>
                 {listImg.slice(0, show ? 12 : 22).map(elment => <div>
                         <img src={elment.img} alt={'Portfolio Rooms'}
                              onClick={() => handleOpen(elment.id)}

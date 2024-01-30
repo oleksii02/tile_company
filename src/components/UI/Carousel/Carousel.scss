@@ -90,15 +90,18 @@
 
 @media only screen and (min-width: 900px) and (max-width: 1199px) {
   .swiper-slide {
-    height: 35vh;
+    height: 40vh;
 
     h4 {
+      top:0;
       font-size: 24px;
     }
     h5{
+      top: 50px;
       font-size: 18px;
     }
     p{
+      top: 80px;
       font-size: 16px;
     }
   }
@@ -109,6 +112,7 @@
 
     h4 {
       font-size: 20px;
+      width: 90%;
       top: 0;
     }
     h5{
@@ -117,26 +121,30 @@
     }
     p{
       font-size: 14px;
-      top: 80px
+      top: 80px;
+      width: 90%;
+
     }
   }
 }
 @media only screen and   (max-width: 599px) {
   .swiper-slide {
-    height: 40vh;
+    height: 50vh;
 
     h4 {
       margin: 10px 0;
-      font-size: 18px;
-      top: 10px;
+      font-size: 16px;
+      width: 95%;
+      top: 20px;
     }
     h5{
-      font-size: 14px;
-      top: 50px
+      font-size: 15px;
+      top: 60px
     }
     p{
-      font-size: 12px;
-      top: 85px
+      font-size: 14px;
+      top: 95px;
+      width: 95%;
     }
   }
 }

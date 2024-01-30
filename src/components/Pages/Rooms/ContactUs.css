@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Frank+Ruhl+Libre:wght@700&family=Montserrat:wght@100&family=Poppins:wght@600&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Zen+Antique&family=Zen+Dots&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Frank+Ruhl+Libre:wght@700&family=Montserrat:wght@100&family=Poppins:wght@600&family=Roboto+Slab:wght@100..900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Zen+Antique&family=Zen+Dots&display=swap");
+.contact-us {
+  margin: 20px auto 0;
+  justify-content: center;
+  display: grid;
+}
+.contact-us h2 {
+  margin: 20px 0 0;
+  justify-content: center;
+  display: flex;
+  font-size: 32px;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.contact-us h3 {
+  margin: 0 auto 50px;
+  text-align: center;
+  width: 60vw;
+  color: #A20B05;
+  justify-content: center;
+  display: flex;
+  font-size: 20px;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+.contact-us .line {
+  border: none;
+  width: 60vw;
+  margin: 0 auto;
+  height: 1.5px;
+  background: linear-gradient(to left, #E3342C 50%, #A20B05 50%);
+}
+.contact-us .width60ch {
+  width: 60vw;
+  margin: 0 auto;
+}
+.contact-us .MuiFormControl-root {
+  padding: 10px 0;
+}
+.contact-us .MuiInputLabel-root {
+  margin-bottom: 10px;
+}
+.contact-us .MuiInputLabel-root .form_name {
+  margin: 0;
+  padding: 0 0 5px 0;
+  color: #0F263C;
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  font-size: 24px;
+}
+.contact-us .MuiInputLabel-root .Error {
+  color: red;
+}
+.contact-us .MuiStack-root {
+  padding: 0;
+  width: 100%;
+}
+.contact-us .MuiTextField-root {
+  margin: 0 0 8px 0;
+  text-align: left;
+  width: 100%;
+}
+.contact-us .MuiButton-root {
+  font-size: 20px;
+  padding: 8px;
+}
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  .contact-us .width60ch {
+    width: 80vw;
+  }
+  .contact-us h3 {
+    width: 85vw;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .contact-us .width60ch {
+    width: 90vw;
+  }
+  .contact-us h3 {
+    width: 90vw;
+    margin: 0 0 35px 0;
+  }
+}
+
+/*# sourceMappingURL=ContactUs.css.map */

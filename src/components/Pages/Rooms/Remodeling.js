@@ -19,7 +19,7 @@ import ArrowCircleDownIcon from '@mui/icons-material/ArrowCircleDown';
 import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
 
 
-function LivingRoom(props) {
+function Remodeling() {
 
     const listImg = [
         {id: 1, img: l1},
@@ -32,9 +32,7 @@ function LivingRoom(props) {
     ]
 
 
-    const [open, setOpen] = useState({
-        1: false,
-    });
+    const [open, setOpen] = useState({1: false,});
 
     const handleOpen = (num) => {
         const newArr = {...open, [num]: true}
@@ -58,27 +56,28 @@ function LivingRoom(props) {
 
             </div>
             <section className={'information'}>
-                <h2>Living Room REMODELING ROCHESTER NY</h2>
+                <h2>REMODELING</h2>
                 <div className={'line'}/>
-                <h3>Looking for Kitchen Renovation Services in Rochester</h3>
-                <p>Just because we specialize in Kitchen and Bathroom Remodeling, don't be fooled! We can be your single point of contact for any of your remodeling needs, providing you with both design and construction. We work together with you every step of the way. We listen to your needs, work with your budget, and then show you how to create the best solution for your home and family. Our low overhead allows us to provide competitive pricing for just about any kind of project and budget.</p>
-                <h4>Cabinets • Painting • Drywall • Ceramic Tile • Windows • Doors • Plumbing • Electrical • Venetian • Plaster</h4>
-                <p>As a third generation remodeling company, we have the experience and expertise to get your project done right and on schedule.Our success is based on our many happy customers. We work hard to exceed your expectations and your satisfaction is 100% guaranteed.
+                <p>Just because we specialize in Kitchen and Bathroom Remodeling, don't be fooled! We can be your single point of contact for all your remodeling needs, providing you with construction. We work with you every step of the way. We listen to your needs, work with your budget, and then show you how to create the best solution for your home and family. Our low overheads allow us to offer competitive pricing for almost any type of project and budget.
+                </p>
+                <p className={'bold'}>Painting • Drywall • Ceramic and granite tiles • Plumbing • Plastering</p>
+                <p>As a second-generation remodeling company, we have the experience and knowledge to get your project done right and on time. Our success is based on many satisfied customers. We work hard to exceed your expectations and your satisfaction is 100% guaranteed.
+                </p>
 
-                    Craftsmen Construction is a family-owned and run company. Our roots trace back to Eastern Europe and our family trade is three generations old. Today, strong as ever, we maintain the same work ethic, integrity and quality as our father and grandfather did.
+                <p><span>TILE COMPANY</span> is a family business. Our roots go back to Eastern Europe, and our family business spans two generations. Today, strong as ever, we maintain the same work ethic, integrity and quality that our fathers did.
+                </p>
+                <p>Serving Highland Park, Vernon Hills, Lake Zurich, Arlington, Northbrook, Barrington, Glenview, Skokie, Oak Park and Chicago, IL provides top-notch bathroom and kitchen remodeling services.
+                </p>
 
-                    Serving Rochester, Spencerport, Webster, Fairport and Pittsford, NY with superior Bathroom and Kitchen Remodeling Services.</p>
 
-
-                <a href={'/'}><Button variant={'contained'}>Schedule A Consultation</Button></a>
-                <h4>Our Promise
-                </h4>
-                <p className={'bold'}>Our craftsmen are highly skilled and trained in their trade. From design to finish, we will complete your project with the highest attention to detail.
+                <a href={'/contact-us'}><Button variant={'contained'}>Schedule A Consultation</Button></a>
+                <h4>OUR PROMISE</h4>
+                <p className={'bold'}>Our craftsmen are highly qualified and trained in their field. From renovation to completion, we will complete your project with the utmost attention to detail.
                 </p>
             </section>
             <section className={'portfolio'}>
 
-                <h3>Providing Kitchen Remodeling in Fairport, Webster, Pittsford, Spencerport, and Rochester.</h3>
+                <h3>text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text </h3>
                 {listImg.slice(0, show ? 12 : 22).map(elment => <div>
                         <img src={elment.img} alt={'Portfolio Rooms'}
                              onClick={() => handleOpen(elment.id)}
@@ -108,4 +107,4 @@ function LivingRoom(props) {
         ;
 }
 
-export default LivingRoom;
+export default Remodeling;

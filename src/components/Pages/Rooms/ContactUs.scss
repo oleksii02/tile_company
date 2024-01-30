@@ -1,0 +1,92 @@
+@import '../../styles/fonts.scss';
+
+.contact-us{
+  margin: 20px auto 0;
+  justify-content: center;
+  display: grid;
+
+  h2 {
+    margin: 20px 0 0;
+    justify-content: center;
+    display: flex;
+    font-size: 32px;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+  h3 {
+    margin: 0 auto 50px;
+    text-align: center;
+    width: 60vw;
+    color: $red__one;
+    justify-content: center;
+    display: flex;
+    font-size: 20px;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+  .line {
+    border: none;
+    width: 60vw;
+    margin: 0 auto;
+    height: 1.5px;
+    background: linear-gradient(to left, $red__two 50%, $red__one 50%);
+  }
+
+  .width60ch{
+    width: 60vw;
+    margin: 0 auto;
+  }
+  .MuiFormControl-root{
+    padding: 10px 0 ;
+  }
+  .MuiInputLabel-root{
+    margin-bottom: 10px;
+    .form_name{
+      margin: 0;
+      padding: 0 0 5px 0;
+      color: $blue__logo;
+      font-family: "Roboto Slab", serif;
+      font-weight: 600;
+      font-size: 24px;
+    }
+    .Error{
+      color: red;
+    }
+  }
+  .MuiStack-root{
+    padding: 0;
+    width: 100%;
+  }
+  .MuiTextField-root{
+    margin: 0 0 8px 0;
+    text-align: left;
+    width: 100%;
+  }
+  .MuiButton-root{
+    font-size: 20px;
+    padding: 8px;
+
+  }
+  @media only screen and (min-width: 600px) and (max-width: 899px) {
+    .width60ch{
+      width: 80vw;
+    }
+    h3{
+      width: 85vw;
+    }
+  }
+    @media only screen and (max-width: 599px) {
+    .width60ch{
+      width: 90vw;
+    }
+    h3{
+      width: 90vw;
+      margin: 0 0 35px 0;
+    }
+
+  }
+}

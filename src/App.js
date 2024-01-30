@@ -8,9 +8,11 @@ import Footer from "./components/UI/Footer/Footer";
 import Bathrooms from "./components/Pages/Rooms/Bathrooms";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Kitchen from "./components/Pages/Rooms/Kitchen";
-import LivingRoom from "./components/Pages/Rooms/LivingRoom";
-import BackToTop from "./components/UI/BackToTop/BackToTop";
+import Remodeling from "./components/Pages/Rooms/Remodeling";
 import ScrollToTopFab from "./components/UI/BackToTop/BackToTop";
+import {useEffect} from "react";
+import ContactUs from "./components/Pages/Rooms/ContactUs";
+import GeneralContracting from "./components/Pages/Rooms/GeneralContracting";
 
 function App() {
 
@@ -23,6 +25,10 @@ function App() {
         },
     });
 
+    useEffect(() => {
+        console.log('App')
+    }, [])
+
     return (
         <ThemeProvider theme={theme}>
             <BrowserRouter>
@@ -32,16 +38,15 @@ function App() {
 
                     <Routes>
                         <Route path="/" element={<Home/>}/>
-                        <Route path="bathrooms" element={<Bathrooms/>}/>
-                        <Route path='kitchen' element={<Kitchen/>}/>
-                        <Route path='living-room' element={<LivingRoom/>}/>
+                        <Route path="/bathrooms" element={<Bathrooms/>}/>
+                        <Route path='/kitchen' element={<Kitchen/>}/>
+                        <Route path='/remodeling' element={<Remodeling/>}/>
+                        <Route path='/general-contracting' element={<GeneralContracting/>}/>
+                        <Route path='/contact-us' element={<ContactUs/>}/>
 
                     </Routes>
-
                     <Carousel/>
                     <Footer/>
-
-
                 </div>
             </BrowserRouter>
         </ThemeProvider>

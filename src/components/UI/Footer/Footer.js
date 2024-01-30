@@ -19,7 +19,7 @@ function Footer(props) {
                         </div>
                         <div className={"Name"}>
                             <h2>TILE COMPANY</h2>
-                            <h3>CERAMIC & GRANITE </h3>
+                            {/*<h3>CERAMIC & GRANITE </h3>*/}
                         </div>
                     </div>
 
@@ -28,11 +28,11 @@ function Footer(props) {
                     <h5>QUICK LINKS</h5>
                     <ul>
                         <li><a href={'/'}>Home</a></li>
-                        <li><a>Bathrooms</a></li>
-                        <li><a>Kitchens</a></li>
-                        <li><a>Designs</a></li>
-                        <li><a>Contracting</a></li>
-                        <li><a>Contact Us</a></li>
+                        <li><a href={'/remodeling'}>Remodeling</a></li>
+                        <li><a href={'/bathrooms'}>Bathrooms</a></li>
+                        <li><a href={'/kitchen'}>Kitchen</a></li>
+                        <li><a href={'/general-contracting'}>General Contracting</a></li>
+                        <li><a href={'/contact-us'}>Contact Us</a></li>
                     </ul>
                 </Grid>
                 <Grid item xs={12} sm={5} md={4} className={'connected'}>
@@ -43,13 +43,13 @@ function Footer(props) {
                         <a href={'/'}><XIcon/></a>
                     </div>
                     <div className={'maps__phone'}>
-                        <a href={''} style={{display: 'flex'}}>
+                        <a href={'/'} style={{display: 'flex'}}>
                             <LocationOnIcon/>
                             <h5>Copany</h5>
                         </a>
-                        <a href={'/'} style={{display: 'flex'}}>
+                        <a href="tel:+15855598020" style={{display: 'flex'}}>
                             <CallIcon/>
-                            <h5>000-000-0000</h5>
+                            <h5>585-559-8020</h5>
                         </a>
                     </div>
 
